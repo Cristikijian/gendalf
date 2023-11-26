@@ -1,4 +1,4 @@
-/** CSS STYLE **/
+/** CSS RESET **/
 html,
 body,
 div,
@@ -133,4 +133,253 @@ table {
   border-spacing: 0;
 }
 
-@font-face {}
+/** CSS RESET **/
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans.ttf') format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+  font-family: 'OpenSans';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #666666;
+}
+
+.block-content {
+  margin: 0 auto;
+}
+
+.button {
+  width: 295px;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.button-success {
+  background-color: #9BCC37;
+  border-radius: 5px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.button-success:hover {
+  background-color: #77ba04;
+}
+
+.button-success-light {
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  color: #9BCC37;
+  text-decoration: none;
+}
+
+.button-info {
+  background-color: #00B7EC;
+  border-radius: 5px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.button-secondary {
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  color: #00B7EC;
+  text-decoration: none;
+}
+
+.header {
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px; */
+}
+
+.header-mobile__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 11px;
+}
+
+.header-mobile__button {
+  text-decoration: none;
+}
+
+.header-desktop {
+  background-color: #00B7EC;
+  /**display: none; **/
+}
+
+.header-desktop__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+
+}
+
+.header-desktop__link {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.header-desktop__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 255px;
+  height: 40px;
+  background-color: #FFFFFF;
+  color: #00B7EC;
+  padding-left: 14px;
+  padding-right: 14px;
+  border-radius: 5px;
+}
+
+.welcome-page,
+.about-us-page,
+.our-worths-page,
+.infrastructure-page,
+.for-students-page,
+.faq-page {
+  padding: 35px 10px 25px 10px;
+}
+
+.about-us-page__images-group,
+.faq_page__image {
+  display: none;
+}
+
+.welcome-page {
+  padding: 30px 0 35px 0;
+  color: #FFFFFF;
+  letter-spacing: 0em;
+  text-align: center;
+  background-color: rgb(0, 18, 24, 0.77);
+  background-blend-mode: multiply;
+  background-image: url("../images/mobile_welcome_page.png");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.welcome-page__title {
+  padding: 0 20px 0 20px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 31px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.welcome-page__main-text {
+  margin: 20px 0 42px 0;
+  padding: 0 15px;
+}
+
+.welcome-page__button,
+.about-us-page__button {
+  margin-bottom: 10px;
+}
+
+.about-us-page__title,
+.our-worths-page__title,
+.infrastructure-page__title,
+.faq-page__title {
+  margin-bottom: 10px;
+  font-size: 28px;
+  line-height: 38px;
+  text-align: center;
+  color: #00B7EC;
+}
+
+.about-us-page__main-text,
+.infrastructure-page__main-text {
+  margin: 10px 0 30px 0;
+}
+
+.about-us-page__button {
+  border: #00B7EC 1px solid;
+}
+
+.our-worths-page {
+  background: #E9E9E9;
+}
+
+.infrastructure-page,
+.faq-page {
+  background: linear-gradient(163.35deg, rgba(40, 228, 115, 0.16) 11.27%, rgba(70, 205, 22, 0.14) 35.82%, rgba(39, 221, 209, 0.39) 57.4%, rgba(5, 176, 213, 0.32) 82.7%);
+}
+
+.infrastructure-page__video {
+  width: 100%;
+}
+
+.for-students-page {
+  background-image: url("../images/for_students_page_image.png");
+  padding: 30px 0 35px 0;
+  color: #FFFFFF;
+  letter-spacing: 0em;
+  text-align: center;
+  background-color: rgb(0, 18, 24, 0.5);
+  background-blend-mode: multiply;
+  background-position: 85%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.for-students-page__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.for-students-page__title {
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-bottom: 21px;
+}
+
+.for-students-page__button {
+  margin-bottom: 29px;
+}
+
+.faq-page__title {
+  text-align: left;
+  font-weight: 700;
+  margin-bottom: 21px;
+  padding-left: 10px;
+}
+
+.faq-page__question-link {
+  display: block;
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 21px;
+}
+
+.faq-page__toggle {
+  position: absolute;
+  top: -1px;
+  left: 10px;
+}
