@@ -153,6 +153,7 @@ body {
 }
 
 .block-content {
+  max-width: 1290px;
   margin: 0 auto;
 }
 
@@ -167,6 +168,7 @@ body {
   font-size: 18px;
   line-height: 24px;
   cursor: pointer;
+  border-style: none;
 }
 
 .button-success {
@@ -185,6 +187,8 @@ body {
   border-radius: 5px;
   color: #9BCC37;
   text-decoration: none;
+  border-style: solid;
+  border-color: #9BCC37;
 }
 
 .button-info {
@@ -201,12 +205,34 @@ body {
   text-decoration: none;
 }
 
+input[type=radio] {
+  appearance: none;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #fff;
+  transition: 0.2s all linear;
+  margin: 0 6px 0 0;
+  position: relative;
+  top: 2px;
+  cursor: pointer;
+}
+
+input[type=radio]:checked {
+  background: #9BCC37;
+  border: 2px solid #ffffff;
+}
+
 .header {
   /* display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 15px; */
+}
+
+.header-mobile {
+  display: block;
 }
 
 .header-mobile__content {
@@ -223,7 +249,7 @@ body {
 
 .header-desktop {
   background-color: #00B7EC;
-  /**display: none; **/
+  display: none;
 }
 
 .header-desktop__content {
@@ -258,7 +284,8 @@ body {
 .our-worths-page,
 .infrastructure-page,
 .for-students-page,
-.faq-page {
+.faq-page,
+.interview-sign-up {
   padding: 35px 10px 25px 10px;
 }
 
@@ -302,7 +329,8 @@ body {
 .about-us-page__title,
 .our-worths-page__title,
 .infrastructure-page__title,
-.faq-page__title {
+.faq-page__title,
+.interview-sign-up_title {
   margin-bottom: 10px;
   font-size: 28px;
   line-height: 38px;
@@ -376,10 +404,100 @@ body {
   position: relative;
   padding-left: 40px;
   margin-bottom: 21px;
+  font-size: 18px;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .faq-page__toggle {
   position: absolute;
   top: -1px;
   left: 10px;
+}
+
+.footer {
+  height: 671px;
+  padding: 18px 10px;
+  color: #FFFFFF;
+  background-color: rgb(0, 18, 24, 0.5);
+  background-blend-mode: multiply;
+  background-image: url("../images/footer_image.png");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.interview-sign-up {
+  box-sizing: border-box;
+  min-width: 355px;
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 24px 30px;
+  opacity: 90%;
+  background-color: #00B7EC;
+}
+
+.interview-sign-up_title {
+  font-weight: 300;
+  margin-bottom: 21px;
+  line-height: 38px;
+  color: #FFFFFF;
+}
+
+.interview-sign-up__form {
+  max-width: 568px;
+  margin: 0 auto;
+}
+
+.interview-sign-up fieldset {
+  max-width: 568px;
+  margin-bottom: 17px;
+  display: flex;
+  flex-direction: column;
+}
+
+.interview-sign-up fieldset legend {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.interview-sign-up__form-input {
+  height: 50px;
+  box-sizing: border-box;
+  display: block;
+  margin-bottom: 6px;
+  padding: 14px 16px;
+  border-radius: 5px;
+  border: 1px solid rgba(102, 102, 102, 0.5);
+  font-family: 'OpenSans';
+  font-size: 18px;
+  color: #666666;
+}
+
+.interview-sign-up__form-input:focus {
+  outline: none;
+  border-width: 2px;
+  border-color: #666666
+}
+
+.interview-sign-up__form-radio-block div {
+  margin-bottom: 6px;
+}
+
+.interview-sign-up__form-input::placeholder {
+  margin-left: 19px;
+  color: #666666;
+  font-family: 'OpenSans';
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  opacity: 50%;
+}
+
+.interview-sign-up__form-file-button {
+  margin-bottom: 6px;
+  justify-content: space-evenly;
 }

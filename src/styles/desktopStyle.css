@@ -1,0 +1,82 @@
+@media (min-width: 1075px) {
+
+  body {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+
+
+  .button {
+    height: 50px;
+  }
+
+  .button-success-light,
+  .button-secondary {
+    width: 327px;
+  }
+
+  .header-desktop {
+    display: block;
+  }
+
+  .header-mobile {
+    display: none;
+  }
+
+  .welcome-page__content {}
+
+  .welcome-page__title {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 87px;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .welcome-page__main-text {
+    margin: 20px auto 43px auto;
+    max-width: 834px;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 34px;
+    text-align: center;
+  }
+
+  .welcome-page__button,
+  .about-us-page__button {
+    display: inline-flex;
+  }
+
+  .welcome-page__button.button-success {
+    width: 175px;
+    margin: 0 50px 0 auto;
+  }
+
+  .about-us-page__title,
+  .our-worths-page__title,
+  .infrastructure-page__title,
+  .faq-page__title,
+  .interview-sign-up_title {
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 49px;
+    text-align: left;
+  }
+
+  .about-us-page__main-text {
+    display: inline-block;
+    max-width: 728px;
+  }
+
+  .about-us-page__images-group {
+    display: inline-block;
+  }
+
+  .about-us-page__button.button-info {
+    margin-right: 21px;
+  }
+
+
+
+}
