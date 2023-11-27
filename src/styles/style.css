@@ -283,7 +283,6 @@ input[type=radio]:checked {
 .about-us-page,
 .our-worths-page,
 .infrastructure-page,
-.for-students-page,
 .faq-page,
 .interview-sign-up {
   padding: 35px 10px 25px 10px;
@@ -351,6 +350,43 @@ input[type=radio]:checked {
   background: #E9E9E9;
 }
 
+.our-worths-page__slider {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  scrollbar-width: thin;
+}
+
+.our-worths-page__slider::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.our-worths-page__slider__block {
+  margin-top: 15px;
+  margin-right: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.our-worths-page__slider__block a {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.our-worths-page__slider__block p {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 15px;
+}
+
 .infrastructure-page,
 .faq-page {
   background: linear-gradient(163.35deg, rgba(40, 228, 115, 0.16) 11.27%, rgba(70, 205, 22, 0.14) 35.82%, rgba(39, 221, 209, 0.39) 57.4%, rgba(5, 176, 213, 0.32) 82.7%);
@@ -416,7 +452,6 @@ input[type=radio]:checked {
 }
 
 .footer {
-  height: 671px;
   padding: 18px 10px;
   color: #FFFFFF;
   background-color: rgb(0, 18, 24, 0.5);

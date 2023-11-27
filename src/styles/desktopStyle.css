@@ -24,8 +24,6 @@
     display: none;
   }
 
-  .welcome-page__content {}
-
   .welcome-page__title {
     font-size: 64px;
     font-weight: 700;
@@ -56,6 +54,7 @@
   .about-us-page__title,
   .our-worths-page__title,
   .infrastructure-page__title,
+  .for-students-page__title,
   .faq-page__title,
   .interview-sign-up_title {
     font-size: 36px;
@@ -64,19 +63,122 @@
     text-align: left;
   }
 
+  .about-us-page,
+  .infrastructure-page {
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+
+  .about-us-page__main-block,
+  .faq-page__main-block {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .about-us-page__main-text {
     display: inline-block;
     max-width: 728px;
   }
 
+  .about-us-page__paragraph,
+  .infrastructure-page__paragraph {
+    margin-bottom: 15px;
+  }
+
   .about-us-page__images-group {
     display: inline-block;
+    position: relative;
+  }
+
+  .about-us-page__hexagon-group {
+    position: absolute;
+  }
+
+  .hexagon-beige {
+    bottom: 50px;
+    right: 245px;
+  }
+
+  .hexagon_blue {
+    top: 170px;
+    left: 232px;
+  }
+
+  .hexagon_green {
+    top: -74px;
+    left: 51px;
   }
 
   .about-us-page__button.button-info {
     margin-right: 21px;
   }
 
+  .infrastructure-page__content {
+    padding-left: 38px;
+  }
+
+  .infrastructure-page__main-block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 43px;
+  }
+
+  .infrastructure-page__video {
+    width: 538px;
+    height: 297px;
+  }
+
+  .infrastructure-page__main-text {
+    max-width: 600px;
+  }
+
+  .infrastructure-page__title {
+    text-align: center;
+  }
+
+  .for-students-page {
+    min-height: 415px;
+  }
+
+  .for-students-page__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .for-students-page__title {
+    max-width: 585px;
+    text-align: center;
+    margin: 83px 0 43px 0;
+    font-weight: 700;
+  }
 
 
+  .faq-page__title {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 35px;
+  }
+
+  .faq_page__image {
+    display: flex;
+    position: relative;
+    top: -56px;
+  }
+
+  .faq-page__question-link {
+    margin-top: 32px;
+  }
+
+  .interview-sign-up_title {
+    text-align: center;
+  }
+
+  .interview-sign-up fieldset.interview-sign-up__button-group {
+    flex-direction: row;
+  }
+
+  .interview-sign-up__form-file-button {
+    max-width: 270px;
+    margin-right: 4px;
+  }
 }
