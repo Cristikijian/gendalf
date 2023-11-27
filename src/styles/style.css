@@ -191,6 +191,11 @@ body {
   border-color: #9BCC37;
 }
 
+.button-success-light:hover {
+  background-color: #9BCC37;
+  color: #FFFFFF;
+}
+
 .button-info {
   background-color: #00B7EC;
   border-radius: 5px;
@@ -198,11 +203,20 @@ body {
   text-decoration: none;
 }
 
+.button-info:hover {
+  background-color: #00a6e3;
+}
+
 .button-secondary {
   background-color: #FFFFFF;
   border-radius: 5px;
   color: #00B7EC;
   text-decoration: none;
+}
+
+.button-secondary:hover {
+  background-color: #00a6e3;
+  color: #FFFFFF;
 }
 
 input[type=radio] {
@@ -443,6 +457,12 @@ input[type=radio]:checked {
   font-size: 18px;
   text-decoration: underline;
   cursor: pointer;
+}
+
+.faq-page__question-link:hover {
+  color: #00B7EC;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .faq-page__toggle {
